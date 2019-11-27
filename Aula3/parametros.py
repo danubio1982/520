@@ -21,14 +21,36 @@
 # print(retorna_valor_int)
 
 ### args e kwargs
-print('olá','mundo','.','prazer','sou','Danubio')
+# print('olá','mundo','.','prazer','sou','Danubio')
 
-### Criando uma função que recebe multiplos valores
-def funcao_multi_valores(parametros_estaticos,*argumento_variavel):
-    print(parametros_estaticos,'parametro estatico')
-    for argumento in argumento_variavel:
-        print(argumento)
+# ### Criando uma função que recebe multiplos valores
+# def funcao_multi_valores(parametros_estaticos,*argumento_variavel):
+#     print(parametros_estaticos,'parametro estatico')
+#     for argumento in argumento_variavel:
+#         print(argumento)
 
-funcao_multi_valores('valor estático obrigatório',
-                    'Daniel', 'Andresa', 'João','Ana',
-                    'Paula','Lucas','Leonardo','Pedro')
+# funcao_multi_valores('valor estático obrigatório',
+#                     'Daniel', 'Andresa', 'João','Ana',
+#                     'Paula','Lucas','Leonardo','Pedro')
+
+
+# ## Argumentos com palavra chave - kwargs
+
+# def parametros_chave_valor(**dados):
+#     if dado('nome') == 'Daniel'
+#         print('Acesso Negado')
+#     else:
+#         print('Permitido')
+
+# #Execução - metodo 1
+# print('Metodo 1')
+# parametros_chave_valor(nome='Daniel', sobrnome='Silva',
+#                         idade=19, sexo='Masculino')
+
+# #Execução - metodo 2
+
+def mudaCor(funcao):
+    def modificaAzul(funcao):
+        return f'\033[91m{funcao}\033[0m' 
+    return modificaAzul()
+mudaCor(input('texto: '))
