@@ -51,6 +51,10 @@
 
 def mudaCor(funcao):
     def modificaAzul(funcao):
-        return f'\033[91m{funcao}\033[0m' 
+        return f'\033[94m{funcao}\033[0m' 
     return modificaAzul()
-mudaCor(input('texto: '))
+
+def log(texto):
+    return(texto)
+    
+print(log('oi'))
