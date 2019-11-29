@@ -23,7 +23,7 @@ class Cachorro(Animal):
         self.idade = idade
         self.cor = cor
         self.raca = raca
-        self.porto.porte
+        self.porte.porte
 
         # Atributos padrão para cada cachorro
         self.patas = 4

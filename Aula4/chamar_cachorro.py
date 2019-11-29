@@ -3,6 +3,6 @@
 # from Cachorro import Cachorro
 import Cachorro
 
-rex = Cachorro.Cachorro('nome','cor','porto')
+rex = Cachorro.Cachorro('Rex','15','preto','Doberman','Grande')
 
 
